@@ -10,23 +10,63 @@ VERSION 3 -Requirements
 */
 
 
+// var todoList = {
+//     todos: ['first','second','third'],
+//     displayTodos: function() {
+//         console.log(this.todos);
+//     },
+//     addTodo: function(newTodo) {
+//         this.todos.push(newTodo);
+//         this.displayTodos();
+//     },
+//     changeTodo: function(position, todo) {
+//         this.todos[position] = todo;
+//         this.displayTodos();
+//     },
+//     deleteTodo: function(position) {
+//         this.todos.splice(position,1);
+//         this.displayTodos();
+//     }
+// }
+
+
+/*
+
+VERSION 4 Booleans -Requirements
+1.) todoList addTodo should add objects
+2.) todoList changeTodo should change the todoText property
+3.) todoList toggleCompleted should flip the completed property
+
+*/
+
 var todoList = {
-    todos: ['first','second','third'],
+    todos: [],
     displayTodos: function() {
-        console.log(this.todos);
+        console.log('My Todos: ', this.todos);
     },
-    addTodo: function(newTodo) {
-        this.todos.push(newTodo);
+    addTodo: function(todoText) {
+       this.todos.push({
+           todoText: todoText,
+           completed: false
+       });
+       this.displayTodos();
+    },
+    changeTodo: function(position,todoText) {
+       this.todos[position].todoText = todoText;
+       this.displayTodos();
+    },
+    deleTodo: function(position) {
+        this.todos.splice(position, 1);
         this.displayTodos();
     },
-    changeTodo: function(position, todo) {
-        this.todos[position] = todo;
-        this.displayTodos();
-    },
-    deleteTodo: function(position) {
-        this.todos.splice(position,1);
+    toggleCompleted: function(position) {
+        var todo = this.todos[position];
+        todo.completed = !todo.completed;
         this.displayTodos();
     }
 }
+
+
+
 
 
