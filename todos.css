@@ -1,7 +1,12 @@
 body {
-    background-color:purple;
+	background-color: purple;
+	font-family: sans-serif;
 }
 
 .title {
-    color: #fff;
+	color: #fff;
+}
+
+div {
+	padding: 5px;
 }
