@@ -10,48 +10,40 @@
 </head>
 
 <body>
+
     <div class="container">
-        <div id="title">
-            <h1>Todo List</h1>
+        <div class="section">
+            <button onclick="handlers.toggleAll()">Toggle All</button>
         </div>
 
         <div class="section">
-            <button onclick="handlers.displayTodos()">Display</button>
-            <button onclick="handlers.toggleAll()">Toggle All</button>
-        </div>    
-
-        <div class="section">
-            <input id="inputTodoText" type="text">
+            <input id="addTodoTextInput" type="text">
             <button onclick="handlers.addTodo()">Add</button>
         </div>
 
         <div class="section">
-            <input id="changeTodoPoistionInput" type="number">
+            <input id="changeTodoPositionInput" type="number">
             <input id="changeTodoTextInput" type="text">
             <button onclick="handlers.changeTodo()">Change</button>
         </div>
 
         <div class="section">
-            <input type="number" id="toggleCompletedPositionInput">
-            <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+            <input id="toggleCompletedPositionInput" type="number">
+            <button onclick="handlers.toggleCompleted()">Toggle Comppleted</button>
         </div>
 
         <div class="section">
             <input id="deleteTodoPositionInput" type="number">
-            <button onclick="handlers.deleteTodo()">Delete</button>
+            <button onclick="handlers.deleTodo()">Delete</button>
         </div>
 
-        <div class="section">
-            <ul>
+        <ul>
 
-            </ul>
-        </div>
-
+        </ul>
     </div>
 
-
     <script src="todo.js"></script>
-
+ 
 </body>
 
 </html>
