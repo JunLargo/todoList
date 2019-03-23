@@ -11,7 +11,7 @@
 
 <body>
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="section">
             <button onclick="handlers.toggleAll()">Toggle All</button>
         </div>
@@ -29,7 +29,7 @@
 
         <div class="section">
             <input id="toggleCompletedPositionInput" type="number">
-            <button onclick="handlers.toggleCompleted()">Toggle Comppleted</button>
+            <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
         </div>
 
         <div class="section">
@@ -42,11 +42,50 @@
         </ul>
     </div>
 
+    <script src="todo.js"></script> -->
+
+    <div class="container">
+
+        <div class="section">
+            <button onclick="handlers.toggleAll()">Toggle All</button>
+        </div>
+        <div class="section">
+            <input id="addTodoTextInput" type="text">
+            <button onclick="handlers.addTodo()">Add</button>
+        </div>
+
+        <div class="section">
+            <input id="changeTodoPositionInput" type="number">
+            <input id="changeTodoTextInput" type="text">
+            <button onclick="handlers.changeTodo()">Change</button>
+        </div>
+
+        <div class="section">
+            <input id="toggleCompletedPositionInput" type="number">
+            <button onclick="handlers.toggleCompleted()">Toggle</button>
+        </div>
+
+        <div class="section">
+            <input id="deleteTodoPositionInput" type="number">
+            <button onclick="handlers.deleteTodo()">Delete</button>
+        </div>
+
+        <div class="section">
+            <ul>
+
+            </ul>
+        </div>
+    </div>
+
+    
     <script src="todo.js"></script>
- 
 </body>
 
 </html>
 
 
 
+
+
+
+ 
